@@ -1,5 +1,19 @@
 # Material Components for iOS
 
+## Installation
+
+This fork distributes Material Components as a Swift Package. The upstream CocoaPods support has been removed.
+
+In Xcode: **File → Add Package Dependencies…** and enter the repository URL.
+
+In `Package.swift`:
+
+```swift
+.package(url: "https://github.com/Tiny-Home-Consulting/material-components-ios.git", branch: "develop")
+```
+
+Add the `MaterialComponents` library product to any target that imports it.
+
 ## Material's iOS libraries are in maintenance mode as of July 15, 2021
 
 On July 15, 2021, the Material Components for iOS library and its related

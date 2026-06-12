@@ -1,0 +1,5 @@
+module MaterialComponents {
+    umbrella "MaterialComponents"
+    export *
+    module * { export * }
+}
