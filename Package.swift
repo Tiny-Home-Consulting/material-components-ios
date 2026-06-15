@@ -163,16 +163,33 @@ let package = Package(
     products: [
         .library(name: "MaterialComponents", targets: ["MaterialComponents"])
     ],
-    dependencies: [
-        .package(path: "../MDFInternationalization"),
-        .package(path: "../MDFTextAccessibility"),
-    ],
     targets: [
+        .target(
+            name: "MDFInternationalization",
+            path: "External/MDFInternationalization",
+            exclude: ["LICENSE", "Sources/Info.plist"],
+            sources: ["Sources"],
+            publicHeadersPath: "PublicHeaders",
+            cSettings: [
+                .headerSearchPath("Sources"),
+            ]
+        ),
+        .target(
+            name: "MDFTextAccessibility",
+            path: "External/MDFTextAccessibility",
+            exclude: ["LICENSE", "src/MDFTextAccessibility-Bridging-Header.h"],
+            sources: ["src"],
+            publicHeadersPath: "PublicHeaders",
+            cSettings: [
+                .headerSearchPath("src"),
+                .headerSearchPath("src/private"),
+            ]
+        ),
         .target(
             name: "MaterialComponents",
             dependencies: [
-                .product(name: "MDFInternationalization", package: "MDFInternationalization"),
-                .product(name: "MDFTextAccessibility", package: "MDFTextAccessibility"),
+                "MDFInternationalization",
+                "MDFTextAccessibility",
             ],
             path: ".",
             exclude: excludePaths,
