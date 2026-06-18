@@ -16,11 +16,6 @@
 
 #import "MaterialShadowElevations.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use go/material-ios-branding UISlider instead. "
-                     "See go/material-ios-slider/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /** The visibility of the discrete dots. */
 typedef NS_ENUM(NSUInteger, MDCThumbDiscreteDotVisibility) {
   /** Discrete dots are never shown. */
@@ -337,8 +332,7 @@ typedef NS_ENUM(NSUInteger, MDCThumbDiscreteDotVisibility) {
  enableRippleBehavior to YES, and then use rippleColor instead. Learn more at
  https://github.com/material-components/material-components-ios/tree/develop/components/Ink#migration-guide-ink-to-ripple
  */
-@property(nullable, nonatomic, strong) UIColor *inkColor __deprecated_msg(
-    "Set enableRippleBehavior to YES and use rippleColor instead.");
+@property(nullable, nonatomic, strong) UIColor *inkColor;
 
 /**
  Whether the thumb should display ink splashes on touch.
@@ -346,8 +340,7 @@ typedef NS_ENUM(NSUInteger, MDCThumbDiscreteDotVisibility) {
  enableRippleBehavior to YES, and then use shouldDisplayRipple instead. Learn more at
  https://github.com/material-components/material-components-ios/tree/develop/components/Ink#migration-guide-ink-to-ripple
  */
-@property(nonatomic, assign) BOOL shouldDisplayInk __deprecated_msg(
-    "Set enableRippleBehavior to YES and use shouldDisplayRipple instead.");
+@property(nonatomic, assign) BOOL shouldDisplayInk;
 
 @end
 
@@ -399,5 +392,3 @@ NS_SWIFT_UI_ACTOR
 - (void)thumbTrack:(nonnull MDCThumbTrack *)thumbTrack didAnimateToValue:(CGFloat)value;
 
 @end
-
-API_DEPRECATED_END

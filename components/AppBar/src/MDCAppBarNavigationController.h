@@ -27,20 +27,10 @@
 @class MDCFlexibleHeaderViewController;
 @protocol MDCAppBarNavigationControllerToBeDeprecatedDelegate;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  Defines the events that an MDCAppBarNavigationController may send to a delegate.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 NS_SWIFT_UI_ACTOR
 @protocol
     MDCAppBarNavigationControllerDelegate <UINavigationControllerDelegate,
@@ -111,11 +101,7 @@ NS_SWIFT_UI_ACTOR
  delegate yet. In this case, use the -appBarForViewController: API to retrieve the injected App Bar
  for your root view controller and execute your delegate logic on the returned result, if any.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 __attribute__((objc_subclassing_restricted))
 @interface MDCAppBarNavigationController : UINavigationController
 
@@ -204,10 +190,6 @@ __attribute__((objc_subclassing_restricted))
  instead. Learn more at
  https://github.com/material-components/material-components-ios/blob/develop/components/AppBar/docs/migration-guide-appbar-appbarviewcontroller.md
  */
-- (nullable MDCAppBar *)appBarForViewController:(nonnull UIViewController *)viewController
-    __deprecated_msg(
-        "Use a branded UINavigationController instead. See go/material-ios-app-bars for guidance.");
+- (nullable MDCAppBar *)appBarForViewController:(nonnull UIViewController *)viewController;
 
 @end
-
-API_DEPRECATED_END

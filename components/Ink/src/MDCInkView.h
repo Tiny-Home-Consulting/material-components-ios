@@ -18,12 +18,6 @@
 // longer import delegates as transitive dependencies.
 #import "MDCInkViewDelegate.h"
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use default system highlight behavior instead: go/material-ios-touch-response. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 @protocol MDCInkViewDelegate;
 
 /** Completion block signature for all ink animations. */
@@ -56,7 +50,7 @@ typedef NS_ENUM(NSInteger, MDCInkStyle) {
  bounded ink isn't just clipped unbounded ink. Whether the ink is bounded or not depends on the kind
  of UI element the user is interacting with.
  */
-__deprecated_msg("Please use MDCRippleView instead.") @interface MDCInkView : UIView
+@interface MDCInkView : UIView
 
 /**
  Ink view animation delegate. Clients set this delegate to receive updates when ink animations
@@ -184,5 +178,3 @@ __deprecated_msg("Please use MDCRippleView instead.") @interface MDCInkView : UI
 + (nonnull MDCInkView *)injectedInkViewForView:(nonnull UIView *)view;
 
 @end
-
-API_DEPRECATED_END

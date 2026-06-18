@@ -18,12 +18,6 @@
 
 @protocol MDCButtonBarDelegate;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 /**
  The position of the button bar, typically aligned with the leading or trailing edge of the screen.
 
@@ -229,8 +223,7 @@ IB_DESIGNABLE
  enableRippleBehavior to YES, and then use rippleColor instead. Learn more at
  https://github.com/material-components/material-components-ios/tree/develop/components/Ink#migration-guide-ink-to-ripple
  */
-@property(nonatomic, strong, nullable) UIColor *inkColor __deprecated_msg(
-    "Set enableRippleBehavior to YES and use rippleColor instead.");
+@property(nonatomic, strong, nullable) UIColor *inkColor;
 
 @end
 
@@ -265,5 +258,3 @@ typedef NS_OPTIONS(NSUInteger, MDCBarButtonItemLayoutHints) {
     UILargeContentViewerInteractionDelegate>
 @end
 #endif  // MDC_AVAILABLE_SDK_IOS(13_0)
-
-API_DEPRECATED_END

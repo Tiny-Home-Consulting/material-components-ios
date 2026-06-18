@@ -14,12 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN("🤖👀 Use Typescale tokens instead. "
-                     "See go/material-ios-dynamic-type#custom-fonts and "
-                     "go/material-ios-tokens#typescale-tokens for more info. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀",
-                     ios(12, 12))
-
 /**
  Set of constants that describe Material's text styles.
 
@@ -84,5 +78,3 @@ UIKIT_EXTERN MDCTextStyle const MDCTextStyleOverline;
 - (nonnull UIFont *)scaledFontWithFont:(nonnull UIFont *)font;
 
 @end
-
-API_DEPRECATED_END

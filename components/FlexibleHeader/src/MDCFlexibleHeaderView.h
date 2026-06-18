@@ -21,8 +21,6 @@
 #import "MDCFlexibleHeaderViewDelegate.h"
 #import "MaterialShadowElevations.h"
 
-API_DEPRECATED_BEGIN("Use a branded UINavigationController instead.", ios(12, API_TO_BE_DEPRECATED))
-
 FOUNDATION_EXPORT NSString *_Nonnull const MDCFlexibleHeaderViewAccessibilityIdentifier;
 
 typedef void (^MDCFlexibleHeaderChangeContentInsetsBlock)(void);
@@ -373,7 +371,6 @@ IB_DESIGNABLE
 
 @interface MDCFlexibleHeaderView (ToBeDeprecated)
 
-
 /**
  When this is enabled, the flexible header will assume that minimumHeight and maximumHeight both
  include the Safe Area top inset. For example, a header whose maximum content height should be 200
@@ -431,24 +428,21 @@ IB_DESIGNABLE
 
  Must be called from UIViewController::willRotateToInterfaceOrientation:duration:.
  */
-- (void)interfaceOrientationWillChange __deprecated_msg(
-    "Use viewWillTransitionToSize:withTransitionCoordinator: instead.");
+- (void)interfaceOrientationWillChange;
 
 /**
  Informs the receiver that the interface orientation is in the process of changing.
 
  Must be called from UIViewController::willAnimateRotationToInterfaceOrientation:duration:.
  */
-- (void)interfaceOrientationIsChanging __deprecated_msg(
-    "Use viewWillTransitionToSize:withTransitionCoordinator: instead.");
+- (void)interfaceOrientationIsChanging;
 
 /**
  Informs the receiver that the interface orientation has changed.
 
  Must be called from UIViewController::didRotateFromInterfaceOrientation:.
  */
-- (void)interfaceOrientationDidChange __deprecated_msg(
-    "Use viewWillTransitionToSize:withTransitionCoordinator: instead.");
+- (void)interfaceOrientationDidChange;
 
 @end
 
@@ -458,10 +452,7 @@ IB_DESIGNABLE
 #pragma mark Accessing the header's views
 
 /** Deprecated. Please register views directly to the flexible header. */
-@property(nonatomic, strong, nonnull) UIView *contentView
-__deprecated_msg("Please register views directly to the flexible header.");
+@property(nonatomic, strong, nonnull) UIView *contentView;
 
 @end
 // clang-format on
-
-API_DEPRECATED_END

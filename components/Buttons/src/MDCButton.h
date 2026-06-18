@@ -22,11 +22,6 @@
 #import "MaterialShadowElevations.h"
 #import "MaterialShapes.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  A Material flat, raised or floating button.
 
@@ -441,7 +436,7 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
 
  Default is UIEdgeInsetsZero.
  */
-@property(nonatomic) UIEdgeInsets hitAreaInsets __deprecated_msg("Use centerVisibleArea instead.");
+@property(nonatomic) UIEdgeInsets hitAreaInsets;
 
 /*
  Indicates whether the button should automatically update its font when the device’s
@@ -459,9 +454,6 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
  scalable font.
  */
 @property(nonatomic, readwrite, setter=mdc_setAdjustsFontForContentSizeCategory:)
-    BOOL mdc_adjustsFontForContentSizeCategory UI_APPEARANCE_SELECTOR __deprecated_msg(
-        "Use titleLabel.adjustsFontForContentSizeCategory");
+    BOOL mdc_adjustsFontForContentSizeCategory UI_APPEARANCE_SELECTOR;
 
 @end
-
-API_DEPRECATED_END

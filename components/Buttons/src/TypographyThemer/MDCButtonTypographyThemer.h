@@ -17,11 +17,6 @@
 
 #import <Foundation/Foundation.h>
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  The Material Design typography system's themer for instances of MDCButton.
 
@@ -29,9 +24,8 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
  `MDCFloatingButton`'s Theming extensions.
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
-__deprecated_msg("Please use MDCButton+MaterialTheming instead. (Note: Typography theming"
-                 "is no longer available as an independent API.)")
-    @interface MDCButtonTypographyThemer : NSObject
+
+@interface MDCButtonTypographyThemer : NSObject
 
 /**
  Applies a typography scheme's properties to an MDCButton.
@@ -47,5 +41,3 @@ __deprecated_msg("Please use MDCButton+MaterialTheming instead. (Note: Typograph
                      toButton:(nonnull MDCButton *)button;
 
 @end
-
-API_DEPRECATED_END

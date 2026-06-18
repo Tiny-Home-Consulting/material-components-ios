@@ -15,12 +15,6 @@
 #import "MaterialAppBar.h"
 #import "MaterialColorScheme.h"
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  The Material Design color system's themer for instances of MDCAppBar.
 
@@ -75,9 +69,7 @@ API_DEPRECATED_BEGIN(
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
 + (void)applyColorScheme:(nonnull id<MDCColorScheme>)colorScheme
-                toAppBar:(nonnull MDCAppBar *)appBar
-    __deprecated_msg(
-        "Use a branded UINavigationController instead. See go/material-ios-app-bars for guidance.");
+                toAppBar:(nonnull MDCAppBar *)appBar;
 
 /**
  Applies a color scheme's properties to an MDCAppBar using the surface mapping.
@@ -92,9 +84,7 @@ API_DEPRECATED_BEGIN(
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
 + (void)applySurfaceVariantWithColorScheme:(nonnull id<MDCColorScheming>)colorScheme
-                                  toAppBar:(nonnull MDCAppBar *)appBar
-    __deprecated_msg(
-        "Use a branded UINavigationController instead. See go/material-ios-app-bars for guidance.");
+                                  toAppBar:(nonnull MDCAppBar *)appBar;
 
 /**
  Applies a color scheme's properties to an MDCAppBarViewController instance using the surface
@@ -110,10 +100,6 @@ API_DEPRECATED_BEGIN(
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
 + (void)applySurfaceVariantWithColorScheme:(nonnull id<MDCColorScheming>)colorScheme
-                    toAppBarViewController:(nonnull MDCAppBarViewController *)appBarViewController
-    __deprecated_msg(
-        "Use a branded UINavigationController instead. See go/material-ios-app-bars for guidance.");
+                    toAppBarViewController:(nonnull MDCAppBarViewController *)appBarViewController;
 
 @end
-
-API_DEPRECATED_END

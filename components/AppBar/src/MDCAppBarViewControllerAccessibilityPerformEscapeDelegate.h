@@ -18,21 +18,11 @@
 
 @class MDCAppBarViewController;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  A delegate that can be implemented in order to respond to events specific to
  MDCAppBarViewController.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 API_UNAVAILABLE(tvos, watchos)
 NS_SWIFT_UI_ACTOR
 @protocol MDCAppBarViewControllerAccessibilityPerformEscapeDelegate <NSObject>
@@ -49,5 +39,3 @@ NS_SWIFT_UI_ACTOR
     (nonnull MDCAppBarViewController *)appBarViewController;
 
 @end
-
-API_DEPRECATED_END

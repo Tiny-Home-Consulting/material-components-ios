@@ -15,10 +15,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN("🤖👀 Use layer.cornerRadius to achieve rounded corners. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 @protocol MDCShapeGenerating;
 
 /*
@@ -119,5 +115,3 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, strong, nonnull) CAShapeLayer *colorLayer;
 
 @end
-
-API_DEPRECATED_END

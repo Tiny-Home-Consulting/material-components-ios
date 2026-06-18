@@ -21,21 +21,11 @@
 @class MDCAppBarViewController;
 @protocol MDCAppBarViewControllerAccessibilityPerformEscapeDelegate;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  MDCAppBarViewController is a flexible header view controller that manages a navigation bar and
  header stack view in order to provide the Material Top App Bar user interface.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 API_UNAVAILABLE(tvos, watchos)
 @interface MDCAppBarViewController : MDCFlexibleHeaderViewController
 
@@ -97,11 +87,7 @@ API_UNAVAILABLE(tvos, watchos)
  @warning This API will be deprecated in favor of MDCAppBarViewController. Learn more at
  https://github.com/material-components/material-components-ios/blob/develop/components/AppBar/docs/migration-guide-appbar-appbarviewcontroller.md
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 API_UNAVAILABLE(tvos, watchos)
 @interface MDCAppBar : NSObject
 
@@ -153,5 +139,3 @@ API_UNAVAILABLE(tvos, watchos)
 @property(nonatomic) BOOL inferTopSafeAreaInsetFromViewController;
 
 @end
-
-API_DEPRECATED_END

@@ -16,8 +16,6 @@
 
 @class MDCStatusBarShifter;
 
-API_DEPRECATED_BEGIN("Use a branded UINavigationController instead.", ios(12, API_TO_BE_DEPRECATED))
-
 /**
  The MDCStatusBarShifterDelegate protocol allows a delegate to react to changes in the status bar
  shifter's state.
@@ -39,5 +37,3 @@ NS_SWIFT_UI_ACTOR
     wantsSnapshotViewAdded:(UIView *)view;
 
 @end
-
-API_DEPRECATED_END

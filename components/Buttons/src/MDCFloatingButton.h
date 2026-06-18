@@ -17,11 +17,6 @@
 
 #import "MDCButton.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  Shapes for Material Floating buttons.
 
@@ -274,9 +269,6 @@ typedef NS_ENUM(NSInteger, MDCFloatingButtonImageLocation) {
  */
 - (void)setHitAreaInsets:(UIEdgeInsets)hitAreaInsets
                 forShape:(MDCFloatingButtonShape)shape
-                  inMode:(MDCFloatingButtonMode)mode UI_APPEARANCE_SELECTOR
-    __deprecated_msg("Use setCenterVisibleArea:forShape:inMode: instead.");
+                  inMode:(MDCFloatingButtonMode)mode UI_APPEARANCE_SELECTOR;
 
 @end
-
-API_DEPRECATED_END

@@ -2,11 +2,6 @@
 
 #import "MDCButton.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  This category is temporary and is meant to allow us to A/B test the performance improvements of
  using the new shadow vs the old shadow. When such test is finalized, we will delete this file and
@@ -26,5 +21,3 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
 + (void)setEnablePerformantShadow:(BOOL)enable;
 
 @end
-
-API_DEPRECATED_END

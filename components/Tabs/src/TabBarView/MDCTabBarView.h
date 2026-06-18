@@ -69,7 +69,8 @@ typedef NS_ENUM(NSUInteger, MDCTabBarViewLayoutStyle) {
 /**
  An implementation of Material Tabs (https://material.io/design/components/tabs.html).
  */
-__attribute__((objc_subclassing_restricted)) @interface MDCTabBarView : UIScrollView
+__attribute__((objc_subclassing_restricted))
+@interface MDCTabBarView : UIScrollView
 
 /** The set of items displayed in the Tab bar. */
 @property(nonnull, nonatomic, copy) NSArray<UITabBarItem *> *items;
@@ -320,8 +321,7 @@ __attribute__((objc_subclassing_restricted)) @interface MDCTabBarView : UIScroll
 /**
  The color for the Ripple effect for touch feedback.
  */
-@property(nonnull, nonatomic, copy)
-    UIColor *rippleColor __deprecated_msg("Enable disableRippleBehavior instead.");
+@property(nonnull, nonatomic, copy) UIColor *rippleColor;
 
 /**
  Offset to shift the badge from its default location.

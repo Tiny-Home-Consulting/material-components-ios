@@ -27,12 +27,6 @@
    - https://github.com/adamwaite/Validator
  */
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UITextField or UITextView instead: go/material-ios-text-fields/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 /**
  This represents different options for the relationship between the labels and the alignment rect.
  */
@@ -238,9 +232,8 @@ Common API for text inputs that support having a leading view.
 MDCTextField implements this protocol but MDCMultilineTextField does not because the designers
 determined multiline text fields should only have trailing views.
 */
-__deprecated_msg(
-    "MDCTextField and its associated classes are deprecated. Please use TextControls instead.")
-    @protocol MDCLeadingViewTextInput<MDCTextInput>
+
+@protocol MDCLeadingViewTextInput <MDCTextInput>
 
 /**
  An overlay view on the leading side.
@@ -280,5 +273,3 @@ __deprecated_msg(
 @property(nonatomic, assign) NSUInteger minimumLines UI_APPEARANCE_SELECTOR;
 
 @end
-
-API_DEPRECATED_END

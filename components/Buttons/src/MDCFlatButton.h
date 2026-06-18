@@ -16,11 +16,6 @@
 
 #import "MDCButton.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  A "flat" MDCButton.
 
@@ -50,5 +45,3 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
 @property(nonatomic) BOOL hasOpaqueBackground;
 
 @end
-
-API_DEPRECATED_END

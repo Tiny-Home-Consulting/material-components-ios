@@ -17,11 +17,6 @@
 #import "MaterialFeatureHighlight.h"
 #import "MaterialThemes.h"
 
-API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
-                     "Consider using a modal sheet to explain new features instead. "
-                     "This is go/material-ios-migrations#not-scriptable 🕘",
-                     ios(12, 12))
-
 /**
  The Material Design color system's themer for instances of MDCFeatureHighlightViewController.
 
@@ -47,8 +42,7 @@ API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
  */
 + (void)applySemanticColorScheme:(nonnull id<MDCColorScheming>)colorScheme
     toFeatureHighlightViewController:
-        (nonnull MDCFeatureHighlightViewController *)featureHighlightViewController
-    __deprecated_msg("Customize your MDCFeatureHighlight using its styling APIs directly.");
+        (nonnull MDCFeatureHighlightViewController *)featureHighlightViewController;
 
 /**
  Applies a color scheme to theme to a MDCFeatureHighlightView.
@@ -61,9 +55,6 @@ API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
 + (void)applyColorScheme:(nonnull id<MDCColorScheme>)colorScheme
-    toFeatureHighlightView:(nonnull MDCFeatureHighlightView *)featureHighlightView
-    __deprecated_msg("Customize your MDCFeatureHighlight using its styling APIs directly.");
+    toFeatureHighlightView:(nonnull MDCFeatureHighlightView *)featureHighlightView;
 
 @end
-
-API_DEPRECATED_END

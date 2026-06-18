@@ -15,11 +15,6 @@
 #import "MaterialDialogs.h"  // ComponentImport
 #import "MaterialContainerScheme.h"
 
-API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
-                     "Follow go/material-ios-dialogs to use MDCAlertController instead. "
-                     "This is go/material-ios-migrations#not-scriptable 🕘",
-                     ios(12, 12))
-
 /**
  An MDCDialogPresentationController theming extension used in theming
  presentation attributes of custom UIViewControllers according to the
@@ -50,5 +45,3 @@ API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
 - (void)applyThemeWithScheme:(nonnull id<MDCContainerScheming>)scheme;
 
 @end
-
-API_DEPRECATED_END

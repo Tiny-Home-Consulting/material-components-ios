@@ -25,12 +25,6 @@
 @class MDCActionSheetController;
 @protocol MDCActionSheetControllerDelegate;
 
-API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
-                     "Follow go/material-ios-menus to use UIMenu instead."
-                     "Use UIAlertController in action sheet style for destructive confirmations. "
-                     "This is go/material-ios-migrations#not-scriptable 🕘",
-                     ios(12, 12))
-
 /**
  MDCActionSheetController displays an alert message to the user, similar to
  UIAlertControllerStyleActionSheet.
@@ -52,9 +46,10 @@ API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
 
  */
 __attribute__((objc_subclassing_restricted))
-@interface MDCActionSheetController
-    : UIViewController<MDCElevatable, MDCElevationOverriding, UIContentSizeCategoryAdjusting,
-                       MDCBottomSheetTransitionControllerDelegate>
+@interface MDCActionSheetController : UIViewController<MDCElevatable,
+                                                       MDCElevationOverriding,
+                                                       UIContentSizeCategoryAdjusting,
+                                                       MDCBottomSheetTransitionControllerDelegate>
 
 /**
  Designated initializer to create and return a view controller for displaying an alert to the user.
@@ -250,5 +245,3 @@ __attribute__((objc_subclassing_restricted))
 - (void)setModalPresentationStyle:(UIModalPresentationStyle)modalPresentationStyle NS_UNAVAILABLE;
 
 @end
-
-API_DEPRECATED_END

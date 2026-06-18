@@ -16,12 +16,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
-                     "Follow go/material-ios-menus to use UIMenu instead."
-                     "Use UIAlertController in action sheet style for destructive confirmations. "
-                     "This is go/material-ios-migrations#not-scriptable 🕘",
-                     ios(12, 12))
-
 @interface MDCActionSheetHeaderView : UIView <UIContentSizeCategoryAdjusting>
 
 - (nonnull instancetype)initWithFrame:(CGRect)frame;
@@ -42,5 +36,3 @@ API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
 @property(nonatomic, strong, nullable) UIColor *messageTextColor;
 
 @end
-
-API_DEPRECATED_END

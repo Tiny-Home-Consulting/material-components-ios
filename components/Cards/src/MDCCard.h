@@ -21,11 +21,6 @@
 
 @protocol MDCShapeGenerating;
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded UIView instead. "
-                     "See go/material-ios-cards/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 // TODO(b/238930139): Remove usage of this deprecated API.
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -160,8 +155,7 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded UIView instead. "
  traitCollectionDidChange:. The block is called after the call to the superclass.
  */
 @property(nonatomic, copy, nullable) void (^traitCollectionDidChangeBlock)
-    (MDCCard *_Nonnull card, UITraitCollection *_Nullable previousTraitCollection) API_DEPRECATED(
-        "Ripple/Ink will be replaced with more immediate highlighting effects.", ios(12, 12));
+    (MDCCard *_Nonnull card, UITraitCollection *_Nullable previousTraitCollection);
 
 /*
  The shape generator used to define the card's shape.
@@ -174,9 +168,6 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded UIView instead. "
 
  Default value for shapeGenerator is nil.
  */
-@property(nullable, nonatomic, strong) id<MDCShapeGenerating> shapeGenerator API_DEPRECATED(
-    "Shape generators are no longer supported.", ios(12, 12));
+@property(nullable, nonatomic, strong) id<MDCShapeGenerating> shapeGenerator;
 
 @end
-
-API_DEPRECATED_END

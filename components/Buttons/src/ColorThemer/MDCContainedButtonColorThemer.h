@@ -17,11 +17,6 @@
 
 #import <Foundation/Foundation.h>
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
-                     "See go/material-ios-buttons/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 /**
  The Material Design color system's contained button themer for instances of MDCButton.
 
@@ -45,5 +40,3 @@ API_DEPRECATED_BEGIN("🤖👀 Use branded M3CButton instead. "
                         toButton:(nonnull MDCButton *)button;
 
 @end
-
-API_DEPRECATED_END

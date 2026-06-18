@@ -6,10 +6,7 @@
  For iOS 13+ use UIImageSymbolConfiguration instead to create a image with the correct point size
  and weight.
  */
-API_DEPRECATED("🕘 Schedule time to migrate. "
-               "Use UIImageSymbolConfiguration on iOS 13+"
-               "This is go/material-ios-migrations#not-scriptable 🕘",
-               ios(12.0, 13.0))
+
 __attribute__((objc_subclassing_restricted))
 @interface MDCChipViewAccessoryView : UIImageView
 

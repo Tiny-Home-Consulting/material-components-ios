@@ -15,12 +15,6 @@
 
 #import "Foundation/Foundation.h"
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UITextField or UITextView instead: go/material-ios-text-fields/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -40,5 +34,3 @@ typedef NS_ENUM(NSUInteger, MDCTextControlTextFieldSideViewAlignment) {
 };
 
 NS_ASSUME_NONNULL_END
-
-API_DEPRECATED_END
