@@ -14,12 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UITextField or UITextView instead: go/material-ios-text-fields/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 @class MDCBaseTextField;
 
 /**
@@ -75,5 +69,3 @@ NS_SWIFT_UI_ACTOR
 - (void)baseTextField:(MDCBaseTextField *)textField didUpdateIntrinsicHeight:(CGFloat)height;
 
 @end
-
-API_DEPRECATED_END

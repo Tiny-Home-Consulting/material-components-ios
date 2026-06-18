@@ -23,7 +23,7 @@
  @warning This API is deprecated. Learn more at
  docs/theming.md#migration-guide-themers-to-theming-extensions
  */
-__deprecated_msg("Please use MaterialDialogs+Theming.") @interface MDCAlertColorThemer : NSObject
+@interface MDCAlertColorThemer : NSObject
 
 /**
  Applies a color scheme's properties to an MDCAlertController.

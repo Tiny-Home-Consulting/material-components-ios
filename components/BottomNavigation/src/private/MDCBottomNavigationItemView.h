@@ -25,8 +25,7 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, assign) BOOL titleBelowIcon;
 @property(nonatomic, assign) BOOL selected;
 @property(nonatomic, assign) MDCBottomNavigationBarTitleVisibility titleVisibility;
-@property(nonatomic, strong) MDCRippleTouchController *rippleTouchController API_DEPRECATED(
-    "Follow go/material-ios-touch-response for guidance instead.", ios(12, 12));
+@property(nonatomic, strong) MDCRippleTouchController *rippleTouchController;
 @property(nonatomic, assign) UIOffset titlePositionAdjustment;
 
 @property(nonatomic, copy, nullable) NSString *title;
@@ -104,8 +103,7 @@ __attribute__((objc_subclassing_restricted))
 #pragma mark - Configuring the ripple appearance
 
 /** The color of the ripple effect shown when the user taps on an item. */
-@property(nonatomic, strong, nullable) UIColor *rippleColor API_DEPRECATED(
-    "Follow go/material-ios-touch-response for guidance instead.", ios(12, 12));
+@property(nonatomic, strong, nullable) UIColor *rippleColor;
 
 #pragma mark - Displaying a value in the badge
 
@@ -115,8 +113,7 @@ __attribute__((objc_subclassing_restricted))
  The badge will only be visible if the text is a non-empty string. To hide the badge, set this
  property to nil or an empty string.
  */
-@property(nonatomic, copy, nullable) NSString *badgeText API_DEPRECATED(
-    "See go/material-ios-badges for badge appearance guidance instead.", ios(12, 12));
+@property(nonatomic, copy, nullable) NSString *badgeText;
 #pragma mark - Configuring a badge's visual appearance
 
 /**
@@ -143,24 +140,21 @@ __attribute__((objc_subclassing_restricted))
  If not nil, this value will override badgeAppearance.backgroundColor. If nil, then
  badgeAppearance.backgroundColor will be used instead.
  */
-@property(nonatomic, strong, nullable) UIColor *badgeColor API_DEPRECATED_WITH_REPLACEMENT(
-    "badgeAppearance.backgroundColor", ios(12, 12));
+@property(nonatomic, strong, nullable) UIColor *badgeColor;
 
 /**
  The color of the text representing this item's badge value.
 
  This property is a proxy for badgeAppearance.textColor.
  */
-@property(nonatomic, copy, null_resettable) UIColor *badgeTextColor API_DEPRECATED_WITH_REPLACEMENT(
-    "badgeAppearance.textColor", ios(12, 12));
+@property(nonatomic, copy, null_resettable) UIColor *badgeTextColor;
 
 /**
  The font that will be used to display the value of this item's badge.
 
  This property is a proxy for badgeAppearance.font.
  */
-@property(nonatomic, copy, null_resettable)
-    UIFont *badgeFont API_DEPRECATED_WITH_REPLACEMENT("badgeAppearance.font", ios(12, 12));
+@property(nonatomic, copy, null_resettable) UIFont *badgeFont;
 
 #pragma mark - UILargeContentViewerItem
 

@@ -18,12 +18,6 @@
 // longer import delegates as transitive dependencies.
 #import "MDCInkTouchControllerDelegate.h"
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use default system highlight behavior instead: go/material-ios-touch-response. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 @class MDCInkGestureRecognizer;
 @class MDCInkTouchController;
 @class MDCInkView;
@@ -42,8 +36,7 @@ API_DEPRECATED_BEGIN(
  It is expected that the view will keep a strong reference to its own ink controller, or that the
  view controller controlling the view will keep a strong reference to that view's ink controller.
  */
-__deprecated_msg("Please use MDCRippleTouchController instead.") @interface MDCInkTouchController
-    : NSObject<UIGestureRecognizerDelegate>
+@interface MDCInkTouchController : NSObject <UIGestureRecognizerDelegate>
 
 /** Weak reference to the view that responds to touch events. */
 @property(nonatomic, weak, readonly, nullable) UIView *view;
@@ -133,5 +126,3 @@ __deprecated_msg("Please use MDCRippleTouchController instead.") @interface MDCI
 - (MDCInkView *_Nullable)inkViewAtTouchLocation:(CGPoint)location;
 
 @end
-
-API_DEPRECATED_END

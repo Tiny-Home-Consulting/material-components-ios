@@ -22,11 +22,6 @@
 // longer import delegates as transitive dependencies.
 #import "MDCTabBarDelegate.h"
 
-API_DEPRECATED_BEGIN("🤖👀 Use a branded MDCTabBarView instead. "
-                     "See go/material-ios-tabs and go/material-ios-tabbar-migration for more info. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, 12))
-
 @class MDCTabBarItem;
 @protocol MDCTabBarDelegate;
 @protocol MDCTabBarIndicatorTemplate;
@@ -51,10 +46,8 @@ typedef NS_ENUM(NSInteger, MDCTabBarItemState) {
 
  @see https://material.io/go/design-tabs
  */
-__deprecated_msg(
-    "Use MDCTabBarView instead. See go/material-ios-tabbar-migration for more details.")
-    IB_DESIGNABLE @interface MDCTabBar
-    : UIView<UIBarPositioning, MDCElevatable, MDCElevationOverriding>
+
+IB_DESIGNABLE @interface MDCTabBar : UIView<UIBarPositioning, MDCElevatable, MDCElevationOverriding>
 
 /** The default height for the tab bar with a given position and item appearance. */
 + (CGFloat)defaultHeightForBarPosition:(UIBarPosition)position
@@ -261,5 +254,3 @@ __deprecated_msg(
 @property(nonatomic, nonnull) UIColor *inkColor UI_APPEARANCE_SELECTOR;
 
 @end
-
-API_DEPRECATED_END

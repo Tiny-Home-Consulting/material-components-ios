@@ -14,12 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UITextField or UITextView instead: go/material-ios-text-fields/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 /**
  MDCTextInputPositioningDelegate allows objects outside an MDCTextInput, like
  MDCTextInputController, to pass the MDCTextInput important layout information.
@@ -97,5 +91,3 @@ NS_SWIFT_UI_ACTOR
 - (CGFloat)trailingViewTrailingPaddingConstant;
 
 @end
-
-API_DEPRECATED_END

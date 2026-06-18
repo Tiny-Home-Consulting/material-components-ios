@@ -14,14 +14,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MaterialColorScheme.h"  // SchemeImport
-#import "MaterialShapeScheme.h"  // SchemeImport
+#import "MaterialColorScheme.h"       // SchemeImport
+#import "MaterialShapeScheme.h"       // SchemeImport
 #import "MaterialTypographyScheme.h"  // SchemeImport
-
-API_DEPRECATED_BEGIN("🤖👀 Use go/material-ios-branding APIs instead. "
-                     "See go/material-ios-tokens guidance for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀",
-                     ios(12, 12))
 
 /**
  A container scheme that exposes properties for all supported Material Theming subsystem schemes.
@@ -68,5 +63,3 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, nullable, readwrite) MDCShapeScheme *shapeScheme;
 
 @end
-
-API_DEPRECATED_END

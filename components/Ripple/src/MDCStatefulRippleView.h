@@ -14,12 +14,6 @@
 
 #import "MDCRippleView.h"
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use default system highlight behavior instead: go/material-ios-touch-response. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 /**
  Provides the current state of the ripple. The ripple is either in its normal state, or in the
  selected state where the ripple remains spread on the view.
@@ -170,5 +164,3 @@ __attribute__((objc_subclassing_restricted))
 - (void)touchesCancelled:(nullable NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
 
 @end
-
-API_DEPRECATED_END

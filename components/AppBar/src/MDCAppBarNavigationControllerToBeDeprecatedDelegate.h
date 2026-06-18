@@ -19,20 +19,10 @@
 @class MDCAppBar;
 @class MDCAppBarNavigationController;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  Defines delegate methods that will be deprecated.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 NS_SWIFT_UI_ACTOR
 @protocol MDCAppBarNavigationControllerToBeDeprecatedDelegate <NSObject>
 @optional
@@ -60,5 +50,3 @@ NS_SWIFT_UI_ACTOR
            asChildOfViewController:(nonnull UIViewController *)viewController;
 
 @end
-
-API_DEPRECATED_END

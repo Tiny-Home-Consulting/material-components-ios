@@ -113,8 +113,7 @@ extern NSString *__nonnull const MDCSnackbarMessageBoldAttributeName;
   Default is nil, but MDCRGBAColor(0xFF, 0xFF, 0xFF, (CGFloat)0.6) will be set as the default color
   and is taken from MDCSnackbarMessageView's buttonTitleColorForState:
   */
-@property(nonatomic, strong, nullable) UIColor *buttonTextColor __deprecated_msg(
-    "Use MDCSnackbarMessageView's buttonTitleColorForState: instead.");
+@property(nonatomic, strong, nullable) UIColor *buttonTextColor;
 
 /**
  How long the message should be displayed.

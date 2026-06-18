@@ -99,9 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, nullable) UIImage *largeContentImage NS_AVAILABLE_IOS(13_0);
 
 /** The ripple contronller to display the ripple touch effect. */
-@property(nonatomic, strong, nullable)
-    MDCRippleTouchController *rippleTouchController __deprecated_msg(
-        "Enable disableRippleBehavior instead.");
+@property(nonatomic, strong, nullable) MDCRippleTouchController *rippleTouchController;
 
 /**
  Offset to shift the badge from its default location.

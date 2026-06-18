@@ -140,8 +140,7 @@ NS_ASSUME_NONNULL_BEGIN
  Custom insets to use when computing touch targets. A positive inset value will shrink the hit
  area for the Chip.
  */
-@property(nonatomic, assign)
-    UIEdgeInsets hitAreaInsets __deprecated_msg("Use centerVisibleArea instead.");
+@property(nonatomic, assign) UIEdgeInsets hitAreaInsets;
 
 /**
  A Boolean value that determines whether the visible area is centered in the bounds of the view.
@@ -387,8 +386,7 @@ When @c centerVisibleArea is @c NO, this value is @c UIEdgeInsetsZero.
  scalable font.
  */
 @property(nonatomic, readwrite, setter=mdc_setAdjustsFontForContentSizeCategory:)
-    BOOL mdc_adjustsFontForContentSizeCategory UI_APPEARANCE_SELECTOR __deprecated_msg(
-        "Use titleLabel.adjustsFontForContentSizeCategory");
+    BOOL mdc_adjustsFontForContentSizeCategory UI_APPEARANCE_SELECTOR;
 
 @end
 

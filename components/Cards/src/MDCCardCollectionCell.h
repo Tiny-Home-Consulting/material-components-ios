@@ -20,11 +20,6 @@
 
 @protocol MDCShapeGenerating;
 
-API_DEPRECATED_BEGIN("🤖👀 Use branded UICollectionViewCell instead. "
-                     "See go/material-ios-cards/gm2-migration for more details. "
-                     "This has go/material-ios-migrations#scriptable-potential 🤖👀.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  Through the lifecycle of the cell, the cell can go through one of the 3 states,
  normal, highlighted, and selected. The cell starts in its default state, normal.
@@ -338,9 +333,6 @@ typedef NS_ENUM(NSInteger, MDCCardCellVerticalImageAlignment) {
 
  Default value for shapeGenerator is nil.
  */
-@property(nullable, nonatomic, strong) id<MDCShapeGenerating> shapeGenerator API_DEPRECATED(
-    "Shape generators are no longer supported.", ios(12, 12));
+@property(nullable, nonatomic, strong) id<MDCShapeGenerating> shapeGenerator;
 
 @end
-
-API_DEPRECATED_END

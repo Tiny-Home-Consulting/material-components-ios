@@ -16,8 +16,6 @@
 
 @class MDCFlexibleHeaderView;
 
-API_DEPRECATED_BEGIN("Use a branded UINavigationController instead.", ios(12, API_TO_BE_DEPRECATED))
-
 /**
  An object may conform to this protocol in order to receive animation events caused by a
  MDCFlexibleHeaderView.
@@ -46,5 +44,3 @@ NS_SWIFT_UI_ACTOR
     (nonnull MDCFlexibleHeaderView *)flexibleHeaderView;
 
 @end
-
-API_DEPRECATED_END

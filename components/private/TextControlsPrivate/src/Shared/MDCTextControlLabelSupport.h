@@ -14,12 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UITextField or UITextView instead: go/material-ios-text-fields/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(12, 12))
-
 /**
  This enum represents different positional states the label can be in.
  */
@@ -38,9 +32,9 @@ typedef NS_ENUM(NSUInteger, MDCTextControlLabelPosition) {
   MDCTextControlLabelPositionNormal,
 };
 
-MDCTextControlLabelPosition MDCTextControlLabelPositionWith(BOOL hasLabelText, BOOL hasText,
-                                                            BOOL canLabelFloat, BOOL isEditing);
+MDCTextControlLabelPosition MDCTextControlLabelPositionWith(BOOL hasLabelText,
+                                                            BOOL hasText,
+                                                            BOOL canLabelFloat,
+                                                            BOOL isEditing);
 
 CGSize MDCTextControlLabelSizeWith(NSString *text, CGFloat maxWidth, UIFont *font);
-
-API_DEPRECATED_END

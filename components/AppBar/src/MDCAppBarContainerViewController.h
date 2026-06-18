@@ -19,12 +19,6 @@
 @class MDCAppBar;
 @class MDCAppBarViewController;
 
-API_DEPRECATED_BEGIN(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
-
 /**
  The MDCAppBarContainerViewController controller provides an interface for placing a
  UIViewController behind an App Bar.
@@ -47,11 +41,7 @@ API_DEPRECATED_BEGIN(
  3. Wrapping a view controller can affect things like "isMovingToParentViewController" in
     wonderfully subtle ways.
  */
-API_DEPRECATED(
-    "🕘 Schedule time to migrate. "
-    "Use branded UINavigationController instead: go/material-ios-top-app-bars/gm2-migration. "
-    "This is go/material-ios-migrations#not-scriptable 🕘",
-    ios(11, 12))
+
 @interface MDCAppBarContainerViewController : UIViewController
 
 /**
@@ -110,5 +100,3 @@ API_DEPRECATED(
 @property(nonatomic, strong, nonnull, readonly) MDCAppBar *appBar;
 
 @end
-
-API_DEPRECATED_END

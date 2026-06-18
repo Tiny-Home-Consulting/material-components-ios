@@ -14,11 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN("🕘 Schedule time to migrate. "
-                     "Consider using a modal sheet to explain new features instead. "
-                     "This is go/material-ios-migrations#not-scriptable 🕘",
-                     ios(12, 12))
-
 /** The default alpha for the outer highlight circle. */
 extern const CGFloat kMDCFeatureHighlightOuterHighlightAlpha;
 
@@ -164,5 +159,3 @@ typedef void (^MDCFeatureHighlightCompletion)(BOOL accepted);
 - (void)rejectFeature;
 
 @end
-
-API_DEPRECATED_END
