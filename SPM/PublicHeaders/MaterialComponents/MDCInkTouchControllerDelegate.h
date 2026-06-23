@@ -1,1 +1,0 @@
-../../../components/Ink/src/MDCInkTouchControllerDelegate.h

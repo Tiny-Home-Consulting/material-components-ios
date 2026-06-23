@@ -1,1 +1,0 @@
-../../../components/Ripple/src/MDCRippleViewDelegate.h
