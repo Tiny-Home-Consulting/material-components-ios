@@ -17,7 +17,7 @@
 #import <UIKit/UIKit.h>
 #import <math.h>
 
-__deprecated_msg("Use sin instead.") static inline CGFloat MDCSin(CGFloat value) {
+static inline CGFloat MDCSin(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return sin(value);
 #else
@@ -25,7 +25,7 @@ __deprecated_msg("Use sin instead.") static inline CGFloat MDCSin(CGFloat value)
 #endif
 }
 
-__deprecated_msg("Use cos instead.") static inline CGFloat MDCCos(CGFloat value) {
+static inline CGFloat MDCCos(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return cos(value);
 #else
@@ -33,7 +33,7 @@ __deprecated_msg("Use cos instead.") static inline CGFloat MDCCos(CGFloat value)
 #endif
 }
 
-__deprecated_msg("Use atan2 instead.") static inline CGFloat MDCAtan2(CGFloat y, CGFloat x) {
+static inline CGFloat MDCAtan2(CGFloat y, CGFloat x) {
 #if CGFLOAT_IS_DOUBLE
   return atan2(y, x);
 #else
@@ -41,7 +41,7 @@ __deprecated_msg("Use atan2 instead.") static inline CGFloat MDCAtan2(CGFloat y,
 #endif
 }
 
-__deprecated_msg("Use ceil instead.") static inline CGFloat MDCCeil(CGFloat value) {
+static inline CGFloat MDCCeil(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return ceil(value);
 #else
@@ -49,7 +49,7 @@ __deprecated_msg("Use ceil instead.") static inline CGFloat MDCCeil(CGFloat valu
 #endif
 }
 
-__deprecated_msg("Use fabs instead.") static inline CGFloat MDCFabs(CGFloat value) {
+static inline CGFloat MDCFabs(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return fabs(value);
 #else
@@ -77,7 +77,7 @@ static inline BOOL MDCCGFloatEqual(CGFloat a, CGFloat b) {
   return (fabs(a - b) < constantK * epsilon * fabs(a + b) || fabs(a - b) < min);
 }
 
-__deprecated_msg("Use floor instead.") static inline CGFloat MDCFloor(CGFloat value) {
+static inline CGFloat MDCFloor(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return floor(value);
 #else
@@ -85,7 +85,7 @@ __deprecated_msg("Use floor instead.") static inline CGFloat MDCFloor(CGFloat va
 #endif
 }
 
-__deprecated_msg("Use hypot instead.") static inline CGFloat MDCHypot(CGFloat x, CGFloat y) {
+static inline CGFloat MDCHypot(CGFloat x, CGFloat y) {
 #if CGFLOAT_IS_DOUBLE
   return hypot(x, y);
 #else
@@ -98,7 +98,7 @@ static inline BOOL MDCCGFloatIsExactlyZero(CGFloat value) {
   return (value == 0);
 }
 
-__deprecated_msg("Use pow instead.") static inline CGFloat MDCPow(CGFloat value, CGFloat power) {
+static inline CGFloat MDCPow(CGFloat value, CGFloat power) {
 #if CGFLOAT_IS_DOUBLE
   return pow(value, power);
 #else
@@ -106,7 +106,7 @@ __deprecated_msg("Use pow instead.") static inline CGFloat MDCPow(CGFloat value,
 #endif
 }
 
-__deprecated_msg("Use rint instead.") static inline CGFloat MDCRint(CGFloat value) {
+static inline CGFloat MDCRint(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return rint(value);
 #else
@@ -114,7 +114,7 @@ __deprecated_msg("Use rint instead.") static inline CGFloat MDCRint(CGFloat valu
 #endif
 }
 
-__deprecated_msg("Use round instead.") static inline CGFloat MDCRound(CGFloat value) {
+static inline CGFloat MDCRound(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return round(value);
 #else
@@ -122,7 +122,7 @@ __deprecated_msg("Use round instead.") static inline CGFloat MDCRound(CGFloat va
 #endif
 }
 
-__deprecated_msg("Use sqrt instead.") static inline CGFloat MDCSqrt(CGFloat value) {
+static inline CGFloat MDCSqrt(CGFloat value) {
 #if CGFLOAT_IS_DOUBLE
   return sqrt(value);
 #else

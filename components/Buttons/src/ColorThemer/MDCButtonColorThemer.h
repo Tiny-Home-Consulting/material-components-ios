@@ -26,8 +26,7 @@
  @c MDC*ButtonColorThemer classes instead. Learn more at
  components/schemes/Color/docs/migration-guide-semantic-color-scheme.md
  */
-__deprecated_msg("Please use the MDCButton+MaterialTheming API instead.")
-    @interface MDCButtonColorThemer : NSObject
+@interface MDCButtonColorThemer : NSObject
 
 /**
  Applies a color scheme's properties to an MDCButton.

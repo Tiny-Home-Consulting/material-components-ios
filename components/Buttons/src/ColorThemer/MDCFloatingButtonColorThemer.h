@@ -24,9 +24,7 @@
  `MDCFloatingButton`'s `-applySecondaryThemeWithScheme:`
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
-__deprecated_msg("Please use [MDCFloatingButton applySecondaryThemeWithScheme:] instead. (Note: "
-                 "Color theming is no longer available as an independent API.)")
-    @interface MDCFloatingButtonColorThemer : NSObject
+@interface MDCFloatingButtonColorThemer : NSObject
 
 /**
  Applies a color scheme's properties to an MDCFloatingButton using the floating button style.

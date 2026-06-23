@@ -24,9 +24,7 @@
  `MDCFloatingButton`'s Theming extensions.
  Learn more at docs/theming.md#migration-guide-themers-to-theming-extensions
  */
-__deprecated_msg("Please use MDCButton+MaterialTheming instead. (Note: Typography theming"
-                 "is no longer available as an independent API.)")
-    @interface MDCButtonTypographyThemer : NSObject
+@interface MDCButtonTypographyThemer : NSObject
 
 /**
  Applies a typography scheme's properties to an MDCButton.

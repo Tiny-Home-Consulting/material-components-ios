@@ -1,0 +1,1 @@
+../../../components/Typography/src/MDCFontScaler.h

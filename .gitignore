@@ -8,8 +8,6 @@ yarn.lock
 
 # MDC
 
-build_tests/CocoapodsObjCApp/CocoapodsObjCApp.xcworkspace
-build_tests/CocoapodsSwiftApp/CocoapodsSwiftApp.xcworkspace
 scripts/external/material-design-icons/
 scripts/external/objc-diff/
 
@@ -50,22 +48,8 @@ xcuserdata
 *.hmap
 *.ipa
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-Pods/
-demos/**/Pods/
-Podfile.lock
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
+# Swift Package Manager
+.build/
 
 # fastlane
 #

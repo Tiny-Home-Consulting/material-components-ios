@@ -448,6 +448,6 @@
 
  Default is UIEdgeInsetsZero.
  */
-@property(nonatomic) UIEdgeInsets hitAreaInsets __deprecated_msg("Use centerVisibleArea instead.");
+@property(nonatomic) UIEdgeInsets hitAreaInsets;
 
 @end

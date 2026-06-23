@@ -269,7 +269,6 @@ typedef NS_ENUM(NSInteger, MDCFloatingButtonImageLocation) {
  */
 - (void)setHitAreaInsets:(UIEdgeInsets)hitAreaInsets
                 forShape:(MDCFloatingButtonShape)shape
-                  inMode:(MDCFloatingButtonMode)mode UI_APPEARANCE_SELECTOR
-    __deprecated_msg("Use setCenterVisibleArea:forShape:inMode: instead.");
+                  inMode:(MDCFloatingButtonMode)mode UI_APPEARANCE_SELECTOR;
 
 @end
